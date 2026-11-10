@@ -11,7 +11,8 @@
 &partitions {
 	partition@580000 {
 		label = "ubi";
-		reg = <0x580000 0x7a80000>;	
+		/* Match hanwckf A10 fixed-parts: 112 MiB UBI. */
+		reg = <0x580000 0x7000000>;
 	};
 };
 
